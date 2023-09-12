@@ -10,7 +10,7 @@ class MasterModel(models.Model):
     data_of_birth = models.DateTimeField(default=datetime.now)
 
     def str(self):
-        return self.f_name
+        return f'{self.f_name} {self.l_name}'
 
     class Meta:
         db_table = 'Master'

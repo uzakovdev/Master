@@ -4,3 +4,4 @@ from .models import MasterModel, OrderModel
 # Register your models here.
 
 admin.site.register(MasterModel)
+admin.site.register(OrderModel)
