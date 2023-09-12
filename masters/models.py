@@ -18,7 +18,7 @@ class MasterModel(models.Model):
 
 class OrderModel(models.Model):
     order_name = models.CharField(max_length=100, default='')
-    time_of_order = models.CharField(max_length=100, default='')
+    time_of_order = models.DateTimeField(default=datetime.now)
 
     def str(self):
         return self.order_name
